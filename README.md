@@ -1,0 +1,2 @@
+### Introducción
+Vamos a seguir practicando el uso de patrones de diseño para resolver problemas habituales en el desarrollo de software. Verá que existen muchos patrones diferentes y que cada uno se aplica a casos de uso específicos. A medida que los vayamos trabajando, aprenderás a reconocer cuándo y cómo utilizarlos para escribir código más limpio, flexible y fácil de mantener. Esta tarea te permitirá afianzar los conocimientos adquiridos y descubrir nuevos patrones que te ayudarán a afrontar proyectos más complejos con seguridad y criterio profesional.
