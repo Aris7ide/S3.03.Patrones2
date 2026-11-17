@@ -9,7 +9,7 @@ class AppetizerBuilderTest {
     @Test
     void shouldCreateAppetizer() {
         AppetizerBuilder appetizerBuilder = new AppetizerBuilder();
-        Appetizer appetizer = appetizerBuilder.setName("Caprese").itsCeliac().build();
+        Appetizer appetizer = appetizerBuilder.setName("Caprese").isCeliac().build();
 
         System.out.println(appetizer.toString());
     }

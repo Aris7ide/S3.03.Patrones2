@@ -28,3 +28,4 @@ En los menús pueden estar compuestos por:
 
 ## Execution
 - he empezado creando una clase Apetizer y un builder AppetizerBuilder, siguiendo la idea del patròn builder.
+- he creado todas las interfaces que me permiten forzar una decision despues de otra, manteniendo en este caso Vegan y GlutenFree opcionales.

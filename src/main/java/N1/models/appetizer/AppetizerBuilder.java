@@ -1,6 +1,8 @@
 package N1.models.appetizer;
 
-public class AppetizerBuilder {
+import N1.models.appetizer.interfaces.*;
+
+public class AppetizerBuilder implements Name, Build, AfterName, AfterVegan, AfterCeliac {
 
     private String name;
     private boolean vegan;
@@ -11,12 +13,12 @@ public class AppetizerBuilder {
         return this;
     }
 
-    public AppetizerBuilder itsVegan() {
+    public AppetizerBuilder isVegan() {
         this.vegan = true;
         return this;
     }
 
-    public AppetizerBuilder itsCeliac() {
+    public AppetizerBuilder isCeliac() {
         this.celiac = true;
         return this;
     }
