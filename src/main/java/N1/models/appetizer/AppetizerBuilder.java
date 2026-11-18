@@ -1,6 +1,8 @@
 package N1.models.appetizer;
 
 import N1.models.appetizer.interfaces.*;
+import N1.models.appetizer.interfaces.Build;
+import N1.models.appetizer.interfaces.Name;
 
 public class AppetizerBuilder implements Name, Build, AfterName, AfterVegan, AfterCeliac {
 
