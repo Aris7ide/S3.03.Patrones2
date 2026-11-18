@@ -5,25 +5,42 @@ import N1.models.appetizer.interfaces.*;
 public class AppetizerBuilder implements Name, Build, AfterName, AfterVegan, AfterCeliac {
 
     private String name;
-    private boolean vegan;
-    private boolean celiac;
+    private boolean vegan = false;
+    private boolean celiac = false;
 
+    public static Name builder() {
+        return new AppetizerBuilder();
+    }
+
+    @Override
     public AppetizerBuilder setName(String name) {
         this.name = name;
         return this;
     }
 
+    @Override
     public AppetizerBuilder isVegan() {
         this.vegan = true;
         return this;
     }
 
+    @Override
     public AppetizerBuilder isCeliac() {
         this.celiac = true;
         return this;
     }
 
-    public Appetizer build() {
-        return new Appetizer(name, vegan, celiac);
+    public String getName() {
+        return name;
+    }
+    public boolean getVegan() {
+        return vegan;
+    }
+    public boolean getCeliac() {
+        return celiac;
+    }
+
+    public Appetizer build(){
+        return new Appetizer(this);
     }
 }

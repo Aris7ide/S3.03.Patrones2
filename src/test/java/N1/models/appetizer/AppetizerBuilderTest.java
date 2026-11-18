@@ -8,10 +8,11 @@ class AppetizerBuilderTest {
 
     @Test
     void shouldCreateAppetizer() {
-        AppetizerBuilder appetizerBuilder = new AppetizerBuilder();
-        Appetizer appetizer = appetizerBuilder.setName("Caprese").isCeliac().build();
+        Appetizer appetizer = AppetizerBuilder.builder().setName("Caprese").build();
+        Appetizer appetizer2 = AppetizerBuilder.builder().setName("Aubergine").isCeliac().isVegan().build();
 
         System.out.println(appetizer.toString());
+        System.out.println(appetizer2.toString());
     }
 
 }

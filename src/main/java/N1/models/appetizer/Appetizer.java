@@ -6,14 +6,14 @@ public class Appetizer {
     private final boolean vegan;
     private final boolean celiac;
 
-    public Appetizer(String name, boolean vegan, boolean celiac) {
-        this.name = name;
-        this.vegan = vegan;
-        this.celiac = celiac;
+    public Appetizer(AppetizerBuilder builder) {
+        this.name = builder.getName();
+        this.vegan = builder.getVegan();
+        this.celiac = builder.getCeliac();
     }
 
     @Override
     public String toString() {
-        return this.name;
+        return this.name + " " + (this.vegan? "(Vegan)" : "") + " " + (this.celiac? "(Celiac)" : "");
     }
 }

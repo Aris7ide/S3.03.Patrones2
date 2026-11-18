@@ -29,3 +29,7 @@ En los menús pueden estar compuestos por:
 ## Execution
 - he empezado creando una clase Apetizer y un builder AppetizerBuilder, siguiendo la idea del patròn builder.
 - he creado todas las interfaces que me permiten forzar una decision despues de otra, manteniendo en este caso Vegan y GlutenFree opcionales.
+- para crear el builder de todo el menu quizas necesito una clase MenuBuilder que incluya todos los platos en vez de un Builder por cada plato.
+- me he dado cuenta que puedo construir mas builder por cada clase y encanalarlos en un MenuBuilder.
+- he corregido la clase Appetizer y su builder y he construido una clase Menu y su MenuBuilder que llama el Appetizer
+- tendrè que hacer lo mismo para el primer plato, dessert, cafe, drink.
