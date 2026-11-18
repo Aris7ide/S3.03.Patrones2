@@ -33,3 +33,6 @@ En los menús pueden estar compuestos por:
 - me he dado cuenta que puedo construir mas builder por cada clase y encanalarlos en un MenuBuilder.
 - he corregido la clase Appetizer y su builder y he construido una clase Menu y su MenuBuilder que llama el Appetizer
 - tendrè que hacer lo mismo para el primer plato, dessert, cafe, drink.
+- he conseguido crear el MainCourseBuilder considerando que aqui tambièn hay un suplemento opcional. 
+- he usado un OptionStepMain para que despues del nombre el utente pueda elegir opcionalmente vegano, celiaco o suplemento.
+- he creado una condiciòn que permita elegir un solo suplemento y una sola vez si es vegano o apto para celiacos.
