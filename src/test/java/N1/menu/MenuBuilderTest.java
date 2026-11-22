@@ -1,6 +1,7 @@
 package N1.menu;
 
 import N1.models.Dessert;
+import N1.models.Drink;
 import N1.models.appetizer.AppetizerBuilder;
 import N1.models.mainCourse.MainCourse;
 import N1.models.mainCourse.MainCourseBuilder;
@@ -16,9 +17,9 @@ class MenuBuilderTest {
 
         Menu menu = menuBuilder.setAppetizer(AppetizerBuilder.builder().setName("Caprese").isVegan().build())
                 .setMainCourse(MainCourseBuilder.builder().setName("Pasta ai frutti di mare").setSupplement("Lemon").buildMain())
-                .setDessert(new Dessert("Tiramisu")).build();
+                .setDessert(new Dessert("Tiramisu")).setDrink(new Drink("Coca-Cola")).buildMenu();
 
         System.out.println(menu);
     }
-
+    
 }

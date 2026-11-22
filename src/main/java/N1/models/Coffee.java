@@ -8,12 +8,8 @@ public class Coffee {
         this.type = type;
     }
 
-    public Type getType() {
-        return type;
-    }
-
     @Override
     public String toString() {
-        return type.toString();
+        return this.type.toString();
     }
 }
