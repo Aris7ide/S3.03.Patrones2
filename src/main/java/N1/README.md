@@ -38,3 +38,4 @@ En los menús pueden estar compuestos por:
 - he creado una condiciòn que permita elegir un solo suplemento y una sola vez si es vegano o apto para celiacos.
 - he solucionado lo de poder elegir entre postre o cafe 
 - he añadido Drink, dejarè que solo serà posible un Drink porque es una formula menu individual.
+- He hecho de manera que se pueda construir menus dependiendo si es Full, Half o para niños.

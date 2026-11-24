@@ -1,16 +1,14 @@
 package N1.menu;
 
-import N1.menu.interfaces.AppetizerMenu;
-import N1.menu.interfaces.BuildMenu;
-import N1.menu.interfaces.MainCourseMenu;
-import N1.menu.interfaces.SetOptionsMenu;
+import N1.menu.interfaces.*;
 import N1.models.Coffee;
 import N1.models.Dessert;
 import N1.models.Drink;
 import N1.models.appetizer.Appetizer;
 import N1.models.mainCourse.MainCourse;
+import N1.models.mainCourse.MainCourseBuilder;
 
-public class MenuBuilder implements AppetizerMenu, MainCourseMenu, SetOptionsMenu, BuildMenu {
+public class MenuBuilder implements AppetizerMenu, MainCourseMenu, SetOptionsMenu, BuildMenu, HalfMenu, HalfMenuDrink {
 
     private Appetizer appetizer;
     private MainCourse mainCourse;
@@ -18,7 +16,11 @@ public class MenuBuilder implements AppetizerMenu, MainCourseMenu, SetOptionsMen
     private Coffee coffee;
     private Drink drink;
 
-    public static AppetizerMenu builder() {return new MenuBuilder();}
+    public static AppetizerMenu buildFullMenu() {return new MenuBuilder();}
+
+    public static HalfMenu buildHalfMenu() {return new MenuBuilder();}
+
+    public static MainCourseMenu KidsMenu() {return new MenuBuilder();}
 
     public MenuBuilder setAppetizer(Appetizer appetizer){
         this.appetizer = appetizer;

@@ -24,9 +24,10 @@ public class Menu {
 
     @Override
     public String toString(){
-        return appetizer.toString() + "\n"  +
-                mainCourse.toString() + "\n"+
-                (dessert != null ? dessert.toString() : " ") + (coffee != null ? coffee.toString() : "") + "\n" +
-                drink.toString();
+        return "MENU: \n" +
+                (appetizer != null ? "Appetizer:" + appetizer.toString() + "\n" : "")  +
+                (mainCourse != null ? "Main course: " + mainCourse.toString() + "\n" : "" ) +
+                (dessert != null ? "Dessert: " + dessert.toString() +"\n" : "") + (coffee != null ? "Coffee: " + coffee.toString()+ "\n" : "") +
+                (drink != null ? "Drink: " + drink.toString() + "\n" : "");
     }
 }
