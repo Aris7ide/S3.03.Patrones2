@@ -25,3 +25,4 @@ El programa debe probarse mediante tests unitarios la:
 
 ### Exectution
 - He creado las interfaces Observer y Observable y las clases StockAgent y Observerr
+- He hecho todas las pruebas unitarias con AssertJ para verificar que efectivamente se modifican y se notifican
